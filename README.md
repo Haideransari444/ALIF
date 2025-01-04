@@ -53,7 +53,7 @@
 
 ## **System Architecture**
 
-![System Architecture]([![archtecture](ar.png))
+![System Architecture][![archtecture](https://github.com/Haideransari444/Alif/blob/Master/ar.png?raw=true)
 
 ---
 
