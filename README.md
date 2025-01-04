@@ -53,7 +53,7 @@
 
 ## **System Architecture**
 
-![System Architecture](![archtecture](https://github.com/user-attachments/assets/3b1bedcf-ca0a-4296-a620-02590e65cc1b))
+![System Architecture](![archtecture](https://github.com/user-attachments/assets/673bfd6e-e8d9-4b79-abc3-613631df2b12))
 
 ---
 
