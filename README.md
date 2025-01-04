@@ -1,131 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alif - AI-Powered Tutor</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #000;
-      color: #fff;
-    }
+# Alif - Your AI-Powered Tutor
 
-    header {
-      text-align: center;
-      padding: 20px;
-      background: #111;
-    }
+**Alif** is an innovative AI-driven tutor app designed to provide personalized and interactive learning experiences. With advanced AI technologies, it helps users enhance their knowledge through voice-based assistance, tailored feedback, and smart progress tracking.
 
-    h1 {
-      margin: 0;
-    }
+---
 
-    section {
-      padding: 20px;
-      margin: 10px auto;
-      max-width: 800px;
-      border: 1px solid #333;
-      background: #111;
-    }
+## **Features**
 
-    h2 {
-      border-bottom: 1px solid #444;
-      padding-bottom: 5px;
-    }
+- **Personalized Learning**  
+  *Adapts to individual user needs, ensuring a customized learning journey.*  
+  *Tracks user progress and adjusts difficulty levels based on performance.*
 
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
+- **Voice Assistance**  
+  *AI-powered voice recognition for hands-free interaction.*  
+  *Supports learning through spoken instructions, feedback, and answers to queries.*
 
-    li {
-      margin: 10px 0;
-    }
+- **Interactive Sessions**  
+  *Engaging content through interactive quizzes, flashcards, and explanatory modules.*  
+  *Encourages active participation to boost retention and understanding.*
 
-    pre {
-      background: #222;
-      padding: 10px;
-      overflow-x: auto;
-      border: 1px solid #444;
-    }
+- **Smart Progress Tracking**  
+  *Detailed insights into learning progress with visual data.*  
+  *Highlights strengths and areas for improvement to guide users.*
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111;
-      margin-top: 20px;
-    }
+---
 
-    img {
-      display: block;
-      margin: 0 auto 20px auto;
-      max-width: 100%;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="path-to-your-logo/logo.png" alt="Alif Logo" width="150">
-    <h1>Alif - Your AI-Powered Tutor</h1>
-  </header>
+## **How It Works**
 
-  <section>
-    <h2>About Alif</h2>
-    <p>Alif is an innovative AI-driven tutor app designed to provide personalized and interactive learning experiences. With advanced AI technologies, it helps users enhance their knowledge through voice-based assistance, tailored feedback, and smart progress tracking.</p>
-  </section>
+1. **User Registration** - Users create an account to start their personalized learning journey.  
+2. **Voice and Text Input** - Interact with Alif through text or voice commands.  
+3. **AI Processing** - Advanced algorithms analyze user input and deliver tailored responses.  
+4. **Content Delivery** - Presents learning material in quizzes, explanations, and examples.  
+5. **Feedback Mechanism** - Tracks user performance, offering constructive feedback.  
+6. **Progress Insights** - Generates reports and visualizations to measure growth.
 
-  <section>
-    <h2>Features</h2>
-    <ul>
-      <li><strong>Personalized Learning:</strong> Tracks progress and adjusts difficulty levels based on performance.</li>
-      <li><strong>Voice Assistance:</strong> Hands-free interaction with AI-powered voice recognition.</li>
-      <li><strong>Interactive Sessions:</strong> Engaging quizzes, flashcards, and explanatory modules.</li>
-      <li><strong>Smart Progress Tracking:</strong> Insights into strengths and areas for improvement.</li>
-    </ul>
-  </section>
+---
 
-  <section>
-    <h2>How It Works</h2>
-    <ol>
-      <li>User Registration: Create an account for personalized learning.</li>
-      <li>Voice and Text Input: Interact using text or voice commands.</li>
-      <li>AI Processing: Tailored responses using advanced algorithms.</li>
-      <li>Content Delivery: Adaptive learning formats.</li>
-      <li>Feedback Mechanism: Tracks performance and provides insights.</li>
-      <li>Progress Insights: Generates detailed visualizations.</li>
-    </ol>
-  </section>
+## **Technology Stack**
 
-  <section>
-    <h2>Technology Stack</h2>
-    <ul>
-      <li><strong>Backend:</strong> FastAPI and Supabase for database management.</li>
-      <li><strong>AI Integration:</strong> Google Gemini API, OpenAI Whisper, and Llama AI.</li>
-      <li><strong>Frontend:</strong> HTML/CSS and Vanilla JavaScript.</li>
-    </ul>
-  </section>
+- **Backend**  
+  *FastAPI* for high-performance APIs.  
+  *Supabase* for real-time database management and authentication.
 
-  <section>
-    <h2>System Architecture</h2>
-    <img src="path-to-your-image/architecture.png" alt="Alif Architecture" width="100%">
-  </section>
+- **AI Integration**  
+  *Google Gemini API* for advanced AI capabilities.  
+  *OpenAI Whisper* for voice recognition.  
+  *Llama AI* for intelligent content generation.
 
-  <section>
-    <h2>Future Scope</h2>
-    <ul>
-      <li>Multilingual support for global accessibility.</li>
-      <li>Gamification features to enhance engagement.</li>
-      <li>Expanded content library with diverse materials.</li>
-      <li>Transition to Golang server for scalability and performance.</li>
-    </ul>
-  </section>
+- **Frontend**  
+  *HTML/CSS* and *Vanilla JavaScript* for a clean and responsive interface.
 
-  <section>
-    <h2>Installation & Setup</h2>
-    <pre>
+---
+
+## **System Architecture**
+
+![System Architecture](![archtecture](https://github.com/user-attachments/assets/3b1bedcf-ca0a-4296-a620-02590e65cc1b))
+
+---
+
+## **Future Scope**
+
+- Adding **multilingual support** for global accessibility.
+- Incorporating **gamification features** to enhance engagement.
+- Expanding the **content library** with diverse learning materials.
+- Transitioning to a **Golang** server for increased scalability and performance.
+
+---
+
+## **Installation & Setup**
+
+```bash
 # Clone the repository:
 git clone https://github.com/Talnz007/Alif.git
 
@@ -137,34 +80,29 @@ pip install -r requirements.txt
 
 # Run the FastAPI server:
 uvicorn main:app --reload
+```
 
-# Open the frontend in your browser to start using Alif.
-    </pre>
-  </section>
+1. Open the frontend in your browser to start using Alif.
 
-  <section>
-    <h2>Contributing</h2>
-    <p>We welcome contributions to improve Alif! Please follow these steps:</p>
-    <ol>
-      <li>Fork the repository.</li>
-      <li>Create a feature branch.</li>
-      <li>Commit your changes.</li>
-      <li>Open a pull request with a detailed description.</li>
-    </ol>
-  </section>
+---
 
-  <section>
-    <h2>License</h2>
-    <p>This project is licensed under the MIT License.</p>
-  </section>
+## **Contributing**
 
-  <section>
-    <h2>Acknowledgements</h2>
-    <p>Special thanks to the team members who supported the development of Alif. Inspired by the vision to make learning accessible and engaging for everyone.</p>
-  </section>
+We welcome contributions to improve Alif! Please follow these steps:
 
-  <footer>
-    <p>&copy; 2025 Alif - Your AI-Powered Tutor</p>
-  </footer>
-</body>
-</html>
+1. Fork the repository.  
+2. Create a feature branch.  
+3. Commit your changes.  
+4. Open a pull request with a detailed description.
+
+---
+
+## **License**
+
+This project is licensed under the **MIT License**.
+
+---
+
+## **Acknowledgements**
+
+Special thanks to the team members who supported the development of Alif. Inspired by the vision to make learning accessible and engaging for everyone.
