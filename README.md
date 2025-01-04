@@ -53,7 +53,7 @@
 
 ## **System Architecture**
 
-![System Architecture]([![archtecture](archtecture.png))
+![System Architecture]([![archtecture](ar.png))
 
 ---
 
