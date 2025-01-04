@@ -1,265 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alif - Your AI-Powered Tutor</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alif - AI-Powered Tutor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    section {
+      padding: 20px;
+      margin: 10px auto;
+      max-width: 800px;
+      border: 1px solid #333;
+      background: #111;
+    }
+
+    h2 {
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    pre {
+      background: #222;
+      padding: 10px;
+      overflow-x: auto;
+      border: 1px solid #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      margin-top: 20px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 20px auto;
+      max-width: 100%;
+    }
+  </style>
 </head>
 <body>
-    <style>
-        :root {
-            --primary-color: #000000;
-            --secondary-color: #333333;
-            --text-color: #1a1a1a;
-            --bg-color: #ffffff;
-            --section-bg: #f5f5f5;
-            --hover-color: #e0e0e0;
-            --border-color: #dcdcdc;
-        }
+  <header>
+    <img src="path-to-your-logo/logo.png" alt="Alif Logo" width="150">
+    <h1>Alif - Your AI-Powered Tutor</h1>
+  </header>
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-        }
+  <section>
+    <h2>About Alif</h2>
+    <p>Alif is an innovative AI-driven tutor app designed to provide personalized and interactive learning experiences. With advanced AI technologies, it helps users enhance their knowledge through voice-based assistance, tailored feedback, and smart progress tracking.</p>
+  </section>
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
+  <section>
+    <h2>Features</h2>
+    <ul>
+      <li><strong>Personalized Learning:</strong> Tracks progress and adjusts difficulty levels based on performance.</li>
+      <li><strong>Voice Assistance:</strong> Hands-free interaction with AI-powered voice recognition.</li>
+      <li><strong>Interactive Sessions:</strong> Engaging quizzes, flashcards, and explanatory modules.</li>
+      <li><strong>Smart Progress Tracking:</strong> Insights into strengths and areas for improvement.</li>
+    </ul>
+  </section>
 
-        .hero {
-            background: var(--primary-color);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-            margin-bottom: 2rem;
-        }
+  <section>
+    <h2>How It Works</h2>
+    <ol>
+      <li>User Registration: Create an account for personalized learning.</li>
+      <li>Voice and Text Input: Interact using text or voice commands.</li>
+      <li>AI Processing: Tailored responses using advanced algorithms.</li>
+      <li>Content Delivery: Adaptive learning formats.</li>
+      <li>Feedback Mechanism: Tracks performance and provides insights.</li>
+      <li>Progress Insights: Generates detailed visualizations.</li>
+    </ol>
+  </section>
 
-        .hero img {
-            max-width: 200px;
-            margin-bottom: 1rem;
-        }
+  <section>
+    <h2>Technology Stack</h2>
+    <ul>
+      <li><strong>Backend:</strong> FastAPI and Supabase for database management.</li>
+      <li><strong>AI Integration:</strong> Google Gemini API, OpenAI Whisper, and Llama AI.</li>
+      <li><strong>Frontend:</strong> HTML/CSS and Vanilla JavaScript.</li>
+    </ul>
+  </section>
 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
+  <section>
+    <h2>System Architecture</h2>
+    <img src="path-to-your-image/architecture.png" alt="Alif Architecture" width="100%">
+  </section>
 
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
+  <section>
+    <h2>Future Scope</h2>
+    <ul>
+      <li>Multilingual support for global accessibility.</li>
+      <li>Gamification features to enhance engagement.</li>
+      <li>Expanded content library with diverse materials.</li>
+      <li>Transition to Golang server for scalability and performance.</li>
+    </ul>
+  </section>
 
-        .feature-card {
-            background: var(--section-bg);
-            padding: 1.5rem;
-            border-radius: 8px;
-            transition: transform 0.2s;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .section {
-            margin: 3rem 0;
-            padding: 2rem;
-            background: var(--section-bg);
-            border-radius: 8px;
-        }
-
-        .code-block {
-            background: #1e1e1e;
-            padding: 1rem;
-            border-radius: 4px;
-            overflow-x: auto;
-        }
-
-        .tech-stack {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin: 1rem 0;
-        }
-
-        .tech-item {
-            background: white;
-            padding: 1rem;
-            border-radius: 4px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .collapsible {
-            background: white;
-            border: none;
-            padding: 1rem;
-            width: 100%;
-            text-align: left;
-            cursor: pointer;
-            border-radius: 4px;
-            margin: 0.5rem 0;
-        }
-
-        .content {
-            padding: 0 1rem;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
-
-        .active {
-            max-height: 500px;
-        }
-    </style>
-
-    
-
-    <div class="hero">
-        <img src="![WhatsApp Image 2024-11-18 at 21 50 40_665b38d8](https://github.com/user-attachments/assets/23809b4b-25d9-4dbb-9215-05557de0270c)">
-        <h1>Alif - Your AI-Powered Tutor</h1>
-        <p>An innovative AI-driven tutor app designed to provide personalized and interactive learning experiences.</p>
-    </div>
-    <!-- Architecture Section -->
-    <div class="architecture-section">
-    <h2>App Architecture</h2>
-    <img src="![archtecture](https://github.com/user-attachments/assets/d8c009b8-8d6a-4724-a6a4-337f7e4050bc)" alt="Architecture Diagram" class="architecture-image">
-    </div>
-
-    <div class="container">
-        <div class="feature-grid">
-            <div class="feature-card">
-                <h3>📚 Personalized Learning</h3>
-                <ul>
-                    <li>Adapts to individual user needs</li>
-                    <li>Tracks progress and adjusts difficulty</li>
-                </ul>
-            </div>
-            <div class="feature-card">
-                <h3>🎤 Voice Assistance</h3>
-                <ul>
-                    <li>AI-powered voice recognition</li>
-                    <li>Hands-free interaction</li>
-                </ul>
-            </div>
-            <div class="feature-card">
-                <h3>⚡ Interactive Sessions</h3>
-                <ul>
-                    <li>Engaging quizzes and flashcards</li>
-                    <li>Active participation focus</li>
-                </ul>
-            </div>
-            <div class="feature-card">
-                <h3>📊 Smart Progress Tracking</h3>
-                <ul>
-                    <li>Detailed learning insights</li>
-                    <li>Visual performance data</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>How It Works</h2>
-            <div class="tech-stack">
-                <div class="tech-item">
-                    <h4>1. User Registration</h4>
-                    <p>Create account & start learning</p>
-                </div>
-                <div class="tech-item">
-                    <h4>2. Voice/Text Input</h4>
-                    <p>Multiple interaction methods</p>
-                </div>
-                <div class="tech-item">
-                    <h4>3. AI Processing</h4>
-                    <p>Smart response generation</p>
-                </div>
-                <div class="tech-item">
-                    <h4>4. Content Delivery</h4>
-                    <p>Personalized learning material</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Technology Stack</h2>
-            <button class="collapsible">Backend Stack</button>
-            <div class="content">
-                <ul>
-                    <li>FastAPI for high-performance API</li>
-                    <li>Supabase for real-time database</li>
-                </ul>
-            </div>
-
-            <button class="collapsible">AI Integration</button>
-            <div class="content">
-                <ul>
-                    <li>Google Gemini API</li>
-                    <li>OpenAI Whisper</li>
-                    <li>Llama AI</li>
-                </ul>
-            </div>
-
-            <button class="collapsible">Frontend Stack</button>
-            <div class="content">
-                <ul>
-                    <li>HTML/CSS</li>
-                    <li>Vanilla JavaScript</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Installation & Setup</h2>
-            <div class="code-block">
-                <pre><code class="language-bash">
+  <section>
+    <h2>Installation & Setup</h2>
+    <pre>
+# Clone the repository:
 git clone https://github.com/Talnz007/Alif.git
+
+# Navigate to the project directory:
 cd alif
+
+# Install dependencies:
 pip install -r requirements.txt
-uvicorn main:app --reload</code></pre>
-            </div>
-        </div>
 
-        <div class="section">
-            <h2>Contributing</h2>
-            <p>We welcome contributions to improve Alif! Follow these steps:</p>
-            <ol>
-                <li>Fork the repository</li>
-                <li>Create a feature branch</li>
-                <li>Commit your changes</li>
-                <li>Open a pull request with a detailed description</li>
-            </ol>
-        </div>
+# Run the FastAPI server:
+uvicorn main:app --reload
 
-        <div class="section">
-            <h2>License</h2>
-            <p>This project is licensed under the MIT License.</p>
-        </div>
-    </div>
+# Open the frontend in your browser to start using Alif.
+    </pre>
+  </section>
 
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        for (var i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            });
-        }
+  <section>
+    <h2>Contributing</h2>
+    <p>We welcome contributions to improve Alif! Please follow these steps:</p>
+    <ol>
+      <li>Fork the repository.</li>
+      <li>Create a feature branch.</li>
+      <li>Commit your changes.</li>
+      <li>Open a pull request with a detailed description.</li>
+    </ol>
+  </section>
 
-        // Initialize Prism.js for syntax highlighting
-        Prism.highlightAll();
-    </script>
+  <section>
+    <h2>License</h2>
+    <p>This project is licensed under the MIT License.</p>
+  </section>
+
+  <section>
+    <h2>Acknowledgements</h2>
+    <p>Special thanks to the team members who supported the development of Alif. Inspired by the vision to make learning accessible and engaging for everyone.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Alif - Your AI-Powered Tutor</p>
+  </footer>
 </body>
 </html>
