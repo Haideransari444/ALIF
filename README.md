@@ -4,6 +4,12 @@
 
 ---
 
+## **System Architecture**
+
+![archtecture](https://github.com/Haideransari444/Alif/blob/Master/ar.png?raw=true)
+
+---
+
 ## **Features**
 
 - **Personalized Learning**  
@@ -49,13 +55,6 @@
 - **Frontend**  
   *HTML/CSS* and *Vanilla JavaScript* for a clean and responsive interface.
 
----
-
-## **System Architecture**
-
-![archtecture](https://github.com/Haideransari444/Alif/blob/Master/ar.png?raw=true)
-
----
 
 ## **Future Scope**
 
