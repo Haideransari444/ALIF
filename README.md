@@ -69,7 +69,7 @@
 
 ```bash
 # Clone the repository:
-git clone https://github.com/Talnz007/Alif.git
+git clone https://github.com/Haideransari444/Alif
 
 # Navigate to the project directory:
 cd alif
